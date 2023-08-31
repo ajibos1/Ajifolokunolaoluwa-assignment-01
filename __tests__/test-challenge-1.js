@@ -8,4 +8,16 @@ maybe(
     () => {
         expect(sumOfNumbersTo(10)).toBe(55);
     }
-);
+)
+
+function sumOfNumbersTo(destination) {
+    let sum = 0;
+    for (let i = 1; i <= destination; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+module.exports = {
+    sumOfNumbersTo,
+};
